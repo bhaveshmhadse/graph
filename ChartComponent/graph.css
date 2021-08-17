@@ -1,0 +1,60 @@
+.graph-container {
+  margin: 10vh auto;
+  background: aliceblue;
+  display: block;
+  width: 30vw;
+  border-radius: 0.6rem;
+  filter: drop-shadow(10px 10px 10px grey);
+  transition: all ease-in-out 300ms;
+}
+.graph-container:hover {
+  filter: drop-shadow(10px 10px 5px grey);
+}
+.label {
+  display: inline-block;
+  width: 90%;
+  margin: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.graph-input {
+  border-radius: 0.3rem;
+  outline: none;
+  padding: 0.5rem;
+  background-color: aliceblue;
+  border: 2px solid transparent;
+  border-bottom-color: grey;
+  border-bottom-width: 3px;
+  float: right;
+  margin: auto;
+  transition: all ease-in-out 200ms;
+}
+.graph-input:hover {
+  transform: scale(1.1);
+  border-bottom-color: mediumblue;
+}
+.show-graph {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: mediumseagreen;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  font-weight: 800;
+  color: black;
+  width: 70%;
+  filter: drop-shadow(10px 10px 10px grey);
+  transition: all ease-in-out 300ms;
+}
+
+.show-graph:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .graph-container {
+    width: 80vw;
+  }
+  .graph-input {
+    float: none;
+  }
+}
